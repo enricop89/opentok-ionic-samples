@@ -45,4 +45,10 @@ export class HomePage {
     });
   }
 
+  changeCamera() {
+      if (this.publisher) {
+          this.publisher.setCameraPosition('back')
+      }
+  }
+
 }
